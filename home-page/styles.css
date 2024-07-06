@@ -260,5 +260,60 @@ section.image-container > img {
   width: 100%;
   height: 100%;
 }
-
 /* ================================ End Image section Styles ================================= */
+
+/* ================================ Start About section Styles ================================= */
+section.about {
+  height: 1737px;
+  width: 100%;
+  background-color: var(--primary-bg);
+  padding: 233px 178px 0 178px;
+  position: relative;
+
+  background-image: url("./assets//images/about3.png"),
+    url("./assets//images/about4.png"), url("./assets//images/about2.png"),
+    url("./assets//images/about1.png");
+  background-position:
+    38px 321px,
+    978px 76px,
+    882px 980px,
+    149px 948px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: contain, contain, contain, contain;
+  background-size:
+    401px 342px,
+    401px 526px,
+    401px 531px,
+    401px 531px;
+}
+
+section.about > h5 {
+  font-family: Switzer Variable;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.68px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+section.about > p {
+  font-family: Boska Variable;
+  font-size: 68px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 88.4px;
+  text-align: center;
+  color: #678784;
+  text-transform: capitalize;
+}
+
+section.about > p > span {
+  color: white;
+}
+
+section.about > img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* ================================ End About section Styles ================================= */
