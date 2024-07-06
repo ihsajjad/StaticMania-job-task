@@ -1,11 +1,22 @@
 @font-face {
-  font-family: "SwitzerBlackItalic";
-  src: url("./assets/fonts/Switzer-BlackItalic.woff");
+  font-family: "Switzer Variable";
+  src: url("./assets/fonts/Switzer-Variable.ttf");
 }
 
 @font-face {
-  font-family: "BoskaExtralight";
-  src: url("./assets/fonts/Boska-Extralight.woff");
+  font-family: "Boska Variable";
+  src: url("./assets/fonts/Boska-Variable.ttf");
+}
+
+@font-face {
+  font-family: "Boska-Italic";
+  src: url("./assets/fonts/Boska-VariableItalic.ttf");
+}
+
+:root {
+  --primary-color: #75ff69;
+  --primary-bg: #1b3936;
+  --secondary-bg: #f9f9f9;
 }
 
 * {
@@ -15,5 +26,145 @@
   /* font-family: "Boska", serif; */
   /* font-family: "Poppins", sans-serif; */
   /* font-family: SwitzerBlackItalic; */
-  font-family: BoskaExtralight;
+  /* font-family: BoskaExtralight; */
+  text-decoration: none;
+}
+
+body {
+  width: 1440px;
+  margin: auto;
+}
+
+header {
+  /* min-height: 100vh; */
+  height: 1051px;
+  background-color: var(--primary-bg);
+  position: relative;
+  z-index: 0;
+  padding-top: 29px;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  /* background-image: url("./assets/images/bg.png"); */
+  position: absolute;
+  inset: 0;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+/* ====================================== Start Navbar Styles ==================================== */
+header nav {
+  width: 1214px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 81px 0 145px;
+}
+
+header nav a {
+  font-family: Switzer Variable;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.76px;
+  color: white;
+}
+
+header nav #left-items a:first-child {
+  margin-right: 54px;
+}
+
+header nav #right-items a:first-child {
+  margin-right: 41px;
+}
+
+header nav img {
+  width: 168px;
+  height: 33px;
+}
+/* ====================================== End Navbar Styles ==================================== */
+
+.hero-section .dash-circle {
+  width: 1188px;
+  height: 1188px;
+  top: -87.45px;
+  left: 126px;
+  bottom: -30px;
+  position: absolute;
+  gap: 0px;
+  /* border: 2px solid var(--primary-color); */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='50%25' ry='50%25' stroke='rgba(117%2c 255%2c 105%2c 0.5)' stroke-width='3' stroke-dasharray='15px%2c 15px' stroke-dashoffset='86' stroke-linecap='butt'/%3e%3c/svg%3e");
+
+  /* border-radius: 100px; */
+}
+
+.dash-circle img {
+  height: 570px;
+  width: 570px;
+  position: absolute;
+  z-index: -10;
+}
+
+.dash-circle .hero-info {
+  width: 1070px;
+  height: 724px;
+  z-index: 10;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.dash-circle .hero-info h1 {
+  font-family: Boska Variable;
+  margin-top: 50px;
+}
+
+.dash-circle .hero-info h1 span {
+  display: block;
+  text-align: center;
+}
+
+.dash-circle .hero-info h1 span:first-child,
+.dash-circle .hero-info h1 span:nth-child(2),
+.dash-circle .hero-info h1 span:last-child {
+  font-size: 262px;
+  font-weight: 400;
+  line-height: 161.76px;
+}
+
+.dash-circle .hero-info h1 span:nth-child(2) {
+  text-align: right;
+  margin: 50px -120px 40px 0;
+  font-family: Boska-Italic;
+  font-style: italic !important;
+  color: var(--primary-color);
+}
+
+.dash-circle .hero-info h1 span:nth-child(3) {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 41.6px;
+  margin-bottom: -20px;
+}
+
+.dash-circle .hero-info p {
+  width: 570px;
+  height: 72px;
+  font-family: Switzer Variable;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.76px;
+  text-align: center;
+  margin-top: 50px;
 }
