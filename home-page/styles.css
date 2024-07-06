@@ -17,6 +17,7 @@
   --primary-color: #75ff69;
   --primary-bg: #1b3936;
   --secondary-bg: #f9f9f9;
+  --text-color: #1b3936;
 }
 
 * {
@@ -35,9 +36,16 @@ body {
   margin: auto;
 }
 
+/* ====================================== Common Styles ==================================== */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ====================================== Start Header Styles ==================================== */
 header {
-  /* min-height: 100vh; */
-  height: 1051px;
+  height: 1079px;
   background-color: var(--primary-bg);
   position: relative;
   z-index: 0;
@@ -45,18 +53,7 @@ header {
   overflow: hidden;
 }
 
-header::before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  /* background-image: url("./assets/images/bg.png"); */
-  position: absolute;
-  inset: 0;
-  opacity: 0.1;
-  z-index: 1;
-}
-
-/* ====================================== Start Navbar Styles ==================================== */
+/* ========= Start Nabbar styles =========== */
 header nav {
   width: 1214px;
   height: 33px;
@@ -86,7 +83,7 @@ header nav img {
   width: 168px;
   height: 33px;
 }
-/* ====================================== End Navbar Styles ==================================== */
+/* ========== End Navbar Styles =========== */
 
 .hero-section .dash-circle {
   width: 1188px;
@@ -95,8 +92,6 @@ header nav img {
   left: 126px;
   bottom: -30px;
   position: absolute;
-  gap: 0px;
-  /* border: 2px solid var(--primary-color); */
 
   display: flex;
   align-items: center;
@@ -168,3 +163,89 @@ header nav img {
   text-align: center;
   margin-top: 50px;
 }
+
+.dash-circle div:last-child {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--primary-bg);
+  position: absolute;
+  top: 50%;
+  right: -55px;
+  z-index: 0;
+}
+
+.dash-circle div > button {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  cursor: pointer;
+  position: relative;
+  border: none;
+}
+
+.dash-circle div > button::after {
+  content: "";
+  inset: -8px;
+  border-radius: 50%;
+  background-color: #23746b;
+  position: absolute;
+  z-index: -1;
+}
+
+.dash-circle div > button img {
+  width: 17px;
+  height: auto;
+  z-index: 10;
+}
+/* ====================================== End Header Styles ==================================== */
+
+/* ================================ Start Company Info Styles ================================ */
+section.company-info {
+  width: 100%;
+  height: 850px;
+  padding: 107px 0 0 105px;
+  background-color: var(--secondary-bg);
+  display: flex;
+  gap: 207px;
+  color: var(--text-color);
+}
+
+section.company-info .logo-para-container img {
+  width: 203px;
+}
+
+section.company-info .logo-para-container p {
+  width: 609px;
+  font-family: Switzer Variable;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31.68px;
+  margin-top: 30px;
+}
+
+section.company-info .cabin-data {
+  display: flex;
+  flex-direction: column;
+  gap: 104px;
+}
+
+section.company-info .cabin-data > div h2 {
+  font-family: Boska Variable;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 130px;
+  text-align: left;
+  margin-top: -25px;
+}
+
+section.company-info .cabin-data > div > p,
+section.company-info .cabin-data > div h2 > span {
+  font-family: Switzer Variable;
+  font-size: 24px;
+  line-height: 31.68px;
+  font-weight: 400;
+  margin-left: -5px;
+}
+/* ================================ End Company Info Styles ================================= */
