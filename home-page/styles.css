@@ -348,12 +348,6 @@ section.unique-rooms .cabins .cabin:last-child {
   position: relative;
 }
 
-section.unique-rooms .cabins .cabin:nth-child(2) {
-  width: 582px;
-  height: 778.32px;
-  position: relative;
-}
-
 section.unique-rooms .cabins .cabin > div,
 section.unique-rooms .cabins .cabin > img {
   position: absolute;
@@ -377,6 +371,12 @@ section.unique-rooms .cabins .cabin:last-child > div {
   font-size: 32.11px;
   font-weight: 400 !important;
   line-height: 41.75px;
+}
+
+section.unique-rooms .cabins .cabin:nth-child(2) {
+  width: 582px;
+  height: 778.32px;
+  position: relative;
 }
 
 section.unique-rooms .cabins .cabin:nth-child(2) > div {
@@ -407,3 +407,67 @@ section.unique-rooms .cabins .cabin:nth-child(2) > div > img {
   margin-bottom: 65px;
 }
 /* ============================== End Unique Rooms section Styles ================================ */
+
+/* ================================ Start Call To Action Styles ================================== */
+section.cta {
+  height: 898px;
+  background-color: var(--primary-bg);
+}
+
+section.cta .container {
+  height: 704px;
+  width: 1194px;
+  flex-direction: column;
+  background-image: url("./assets/images/CTABG.png");
+  background-size: 100% 100%;
+  color: white;
+  text-align: center;
+}
+
+section.cta .container h2 {
+  font-family: Boska Variable;
+  font-size: 68px;
+  font-weight: 400;
+  line-height: 88.4px;
+}
+
+section.cta .container h2 span {
+  color: var(--primary-color);
+}
+
+section.cta .container p {
+  font-family: Switzer Variable;
+  font-size: 18px;
+  line-height: 23.76px;
+  margin: 21px 0 60px 0;
+}
+
+section.cta .container > div {
+  width: 570px;
+  height: 60px;
+  display: flex;
+}
+
+section.cta .container > div > input {
+  flex-grow: 1;
+  padding-left: 21px;
+  border: none;
+}
+
+section.cta .container > div > input::placeholder {
+  font-family: Switzer Variable;
+  font-size: 18px;
+  line-height: 23.76px;
+  color: #bbbbbb;
+}
+section.cta .container div > button {
+  width: 174px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  font-family: Switzer Variable;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 23.76px;
+  border: none;
+}
+/* ================================ End Call To Action Styles ==================================== */
