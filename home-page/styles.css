@@ -551,3 +551,103 @@ section.testimonial-section > .btns button:last-child {
   background-color: var(--primary-color);
 }
 /* ============================== End Testimonials Section Styles ================================ */
+
+/* ==================================== Start Footer Styles ====================================== */
+/* ================= Footer Content ================== */
+section.footer {
+  height: 912px;
+  background-color: white;
+  padding-top: 78px;
+}
+
+section.footer > .footer-content {
+  margin: 0 192px 105px 183px;
+  height: 349px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.footer > .footer-content > div {
+  display: flex;
+  flex-direction: column;
+}
+
+section.footer > .footer-content > div > p {
+  margin-bottom: 70px;
+}
+
+section.footer > .footer-content > div > button {
+  width: 200px;
+  height: 72px;
+  background-color: transparent;
+  border-radius: 50%;
+  font-family: Switzer Variable;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 72px;
+}
+
+section.footer > .footer-content img {
+  width: 203px;
+  height: 276.08px;
+  margin-top: 20px;
+}
+
+/* ================= Footer Routes ================== */
+section.footer > .footer-routes {
+  display: flex;
+  height: 320px;
+  width: 100%;
+}
+
+section.footer > .footer-routes > .about {
+  background-color: var(--primary-color);
+  width: 480px;
+  flex-direction: column;
+  position: relative;
+}
+
+section.footer > .footer-routes > .about p {
+  margin-top: -10px;
+}
+
+section.footer > .footer-routes button {
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  width: 43px;
+}
+
+section.footer > .footer-routes > .about button {
+  bottom: 26px;
+  right: 40px;
+}
+
+section.footer > .footer-routes > .rooms,
+section.footer > .footer-routes > .contact {
+  background-color: var(--primary-bg);
+  width: 480px;
+  color: white;
+  position: relative;
+}
+
+section.footer > .footer-routes > .rooms p,
+section.footer > .footer-routes > .contact p {
+  margin-top: 40px;
+}
+
+section.footer > .footer-routes > .rooms button,
+section.footer > .footer-routes > .contact button {
+  bottom: 85px;
+  right: 80px;
+}
+
+/* ================= Footer Links ================== */
+
+section.footer > .footer-links {
+  width: 100%;
+  height: 60px;
+  gap: 58px;
+}
+/* ===================================== End Footer Styles ======================================= */
