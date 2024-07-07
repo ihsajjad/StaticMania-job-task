@@ -1,0 +1,24 @@
+@font-face {
+  font-family: Avenir;
+  src: url("./assets/fonts/AvenirNextLTPro-Regular.otf");
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-bg: #101010;
+  --secondary-bg: #f9fafc;
+  --primary-text: #262a41;
+  --secondary-text: #0f0909;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Avenir;
+}
